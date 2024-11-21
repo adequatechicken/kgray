@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>K. Gray</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="dark-mode">
+    <main>
+      <div class="full-sidebar">
+        <div class="logo"><a class="logoa" href="index.html">K. Gray</a></div>
+        <div class="sidebar"> 
+          <a href="index.html">home</a>
+          <a class="active" href="photo-page.html">photos</a>
+          <a href="#about">about</a>
+          <a href="#writing">writing</a>
+          <a href="misc-page.html">misc.</a>
+        </div>
+      </div>
+      <h4 class="breadcrumb">
+        <a href="index.html">home</a> &nbsp; > &nbsp;
+        <a href="photo-page.html">photos</a> &nbsp; > &nbsp;
+        <a class="active" href="amtrak-photos.html">amtrak</a>
+      </h4>
+
+      <div class="content">
+        <h2>Amtrak 2024</h2>  
+        <!-- Images used to open the lightbox -->
+        <div class="gallery">
+            <img class="gallery-image" src="https://i.postimg.cc/85GxKr2b/img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/vBdwJKVf/img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/rFp22xKn/img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/9MtHCBdS/img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/mr9G64tT/img5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/nh6ymWTg/img6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/WbfLNzZ2/img7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/6qMsG51f/img8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/2ykR6BT5/img9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/cLrWwwWg/img10.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/k5Kkvyp4/img11.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/kg6rBCNW/img12.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/3xVTBNrL/img13.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/XNL6PQ7B/img14.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow">
+            <img class="gallery-image" src="https://i.postimg.cc/28Hm1TsN/img15.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow">
+        </div>
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 15</div>
+              <img src="https://i.postimg.cc/85GxKr2b/img1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 15</div>
+              <img src="https://i.postimg.cc/vBdwJKVf/img2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 15</div>
+              <img src="https://i.postimg.cc/rFp22xKn/img3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 15</div>
+              <img src="https://i.postimg.cc/9MtHCBdS/img4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 15</div>
+                <img src="https://i.postimg.cc/mr9G64tT/img5.jpg" style="width:100%">
+              </div>
+  
+              <div class="mySlides">
+                <div class="numbertext">6 / 15</div>
+                <img src="https://i.postimg.cc/nh6ymWTg/img6.jpg" style="width:100%">
+              </div>
+  
+              <div class="mySlides">
+                <div class="numbertext">7 / 15</div>
+                <img src="https://i.postimg.cc/WbfLNzZ2/img7.jpg" style="width:100%">
+              </div>
+  
+              <div class="mySlides">
+                <div class="numbertext">8 / 15</div>
+                <img src="https://i.postimg.cc/6qMsG51f/img8.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">9 / 15</div>
+                <img src="https://i.postimg.cc/2ykR6BT5/img9.jpg" style="width:100%">
+              </div>
+  
+              <div class="mySlides">
+                <div class="numbertext">10 / 15</div>
+                <img src="https://i.postimg.cc/cLrWwwWg/img10.jpg" style="width:100%">
+              </div>
+  
+              <div class="mySlides">
+                <div class="numbertext">11 / 15</div>
+                <img src="https://i.postimg.cc/k5Kkvyp4/img11.jpg" style="width:100%">
+              </div>
+  
+              <div class="mySlides">
+                <div class="numbertext">12 / 15</div>
+                <img src="https://i.postimg.cc/kg6rBCNW/img12.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">13 / 15</div>
+                <img src="https://i.postimg.cc/3xVTBNrL/img13.jpg" style="width:100%">
+              </div>
+  
+              <div class="mySlides">
+                <div class="numbertext">14 / 15</div>
+                <img src="ahttps://i.postimg.cc/XNL6PQ7B/img14.jpg" style="width:100%">
+              </div>
+  
+              <div class="mySlides">
+                <div class="numbertext">15 / 15</div>
+                <img src="https://i.postimg.cc/28Hm1TsN/img15.jpg" style="width:100%">
+              </div>
+  
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+        </div>
+        </div>
+      </div>
+    </main>
+    <script>
+        document.onkeydown = function (e) {
+        switch (e.key) {
+        case 'ArrowLeft':
+            plusSlides(-1)
+            break;
+        case 'ArrowRight':
+            plusSlides(1)
+            break;
+            }
+        };
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+      
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+      
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+
+
+      </script>
+  </body>
+</html>
